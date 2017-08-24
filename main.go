@@ -18,8 +18,8 @@ var (
 )
 
 func init() {
-	flag.StringVar(&RepoListFilePath, "f", "data/repos.txt", "File containing a list of GitHub repositories on each line in the format 'user/repo_name'. (default='data/repos.txt'")
-	flag.StringVar(&RepoSaveDirectory, "o", "data/repos/", "Directory in which to save the download repositories. (default='data/repos/')")
+	flag.StringVar(&RepoListFilePath, "f", "data/repos.txt", "File containing a list of GitHub repositories on each line.")
+	flag.StringVar(&RepoSaveDirectory, "o", "data/repos/", "Directory in which to save the download repositories.")
 	flag.Parse()
 
 	RepoSaveDirectory = strings.Replace(RepoSaveDirectory, `\`, `/`, -1)
