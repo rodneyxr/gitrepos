@@ -17,6 +17,12 @@ $ ./gitrepos --help
 Usage of gitrepos.exe:
   -f string
         File containing a list of GitHub repositories on each line. (default "data/repos.txt")
+  -m int
+        Maximum repository size that you wish to download. (default 50000)
   -o string
         Directory in which to save the download repositories. (default "data/repos/")
+  -p string
+        Password or token for basic authentication.
+  -u string
+        Username for basic authentication for the GitHub REST API v3.
 ```
